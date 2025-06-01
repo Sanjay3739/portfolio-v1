@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineer Portfolio | Generative AI Specialist</title>
+    <meta name="description" content="Portfolio showcasing generative AI projects and research">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Generative AI</a>
+                <ul class="nav-links">
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#model-inventory">Models</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="main_section">
+                <div class="hero-content">
+                    <h1>Sanjay Makwana</h1>
+                    <h2>Generative AI Developer</h2>
+                    <p>
+                        Building innovative AI solutions with 2+ years of experience in LLMs, diffusion models, and
+                        GANs. Passionate about creating AI that solves real-world problems.
+                    </p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+                <div id="portfolio-card">
+                    <img src="assets/user.png" alt="Your Image" class="portfolio-image">
+                    <div class="overlay">
+                        <div class="content">
+                            <h2>Sanjay Makwana</h2>
+                            <a class="btn resume_btn" onclick="openSecondPage()">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category languages">
+                        <h2><i class="fas fa-code"></i> Languages</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">JavaScript</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category ai-ml">
+                        <h2><i class="fas fa-brain"></i> AI & ML Frameworks</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">TensorFlow</div>
+                            <div class="skill-item">PyTorch</div>
+                            <div class="skill-item">LLaVA</div>
+                            <div class="skill-item">Hugging Face</div>
+                            <div class="skill-item">Ollama</div>
+                            <div class="skill-item">AWS Bedrock</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category llm">
+                        <h2><i class="fas fa-robot"></i> LLM Tooling</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">LangChain</div>
+                            <div class="skill-item">LlamaIndex</div>
+                            <div class="skill-item">CrewAI</div>
+                            <div class="skill-item">OpenAI API</div>
+                            <div class="skill-item">Gemini API</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category web">
+                        <h2><i class="fas fa-globe"></i> Web & Backend</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">Streamlit</div>
+                            <div class="skill-item">FastAPI</div>
+                            <div class="skill-item">Flask</div>
+                            <div class="skill-item">ReactJS</div>
+                            <div class="skill-item">Flask-SocketIO</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category vector-db">
+                        <h2><i class="fas fa-database"></i> Vector DBs & Search</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">FAISS</div>
+                            <div class="skill-item">Qdrant</div>
+                            <div class="skill-item">Pinecone</div>
+                            <div class="skill-item">ChromaDB</div>
+                            <div class="skill-item">Weaviate</div>
+                            <div class="skill-item">ElasticSearch</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category nlp">
+                        <h2><i class="fas fa-language"></i> NLP Libraries</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">NLTK</div>
+                            <div class="skill-item">spaCy</div>
+                            <div class="skill-item">Scikit-learn</div>
+                            <div class="skill-item">Pandas</div>
+                            <div class="skill-item">NumPy</div>
+                            <div class="skill-item">Matplotlib</div>
+                            <div class="skill-item">OpenCV</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category apis">
+                        <h2><i class="fas fa-plug"></i> APIs & Integrations</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">RESTful APIs</div>
+                            <div class="skill-item">Webhooks</div>
+                            <div class="skill-item">WebSockets</div>
+                            <div class="skill-item">Third-party APIs</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category cloud">
+                        <h2><i class="fas fa-cloud"></i> Cloud & DevOps</h2>
+                        <div class="skill-items">
+                            <div class="skill-item">AWS</div>
+                            <div class="skill-item">Git</div>
+                            <div class="skill-item">GitHub</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h2>AI Art Generator</h2>
+                    <div class="category">Generative Art | AI</div>
+                    <p class="description">
+                        A powerful AI Art Generator web app that transforms natural language prompts into stunning
+                        artwork using the Stable Diffusion model.<br>
+                        • Real-time style transfer<br>
+                        • Prompt-based artwork generation<br>
+                        • Famous art-style blending<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_art.png" alt="AI Art Generator Project">
+                        <div class="project-tags">
+                            <span class="project-tag">StableDiffusion</span>
+                            <span class="project-tag">WebGPU_Accelerated</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">TextToImage</span>
+                            <span class="project-tag">ImageGeneration</span>
+                            <span class="project-tag">GenerativeAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h2>LLM Chatbot Framework</h2>
+                    <div class="category">AI Assistants | Chatbot</div>
+                    <p class="description">
+                        A modular and extensible chatbot framework powered by LLMs with:<br>
+                        • Retrieval-Augmented Generation (RAG)<br>
+                        • Domain-specific data grounding<br>
+                        • Context-aware, memory-based dialogue<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_bot.png" alt="LLM Chatbot Project">
+                        <div class="project-tags">
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">OpenAI_API</span>
+                            <span class="project-tag">HuggingFace</span>
+                            <span class="project-tag">Gemini</span>
+                            <span class="project-tag">WebSockets</span>
+                            <span class="project-tag">Hybrid_Retrieval</span>
+                            <span class="project-tag">Contextual_Memory</span>
+                            <span class="project-tag">MultiModel_Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <h2>Smart Voice Assistant</h2>
+                    <div class="category">AI Voice | Virtual Assistant</div>
+                    <p class="description">
+                        A fully interactive AI voice assistant with:<br>
+                        • Voice command recognition<br>
+                        • LLM-powered processing<br>
+                        • Spoken or text-based response<br>
+                        • Tasks: reminders, Q&A, weather, emails<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_voice.png" alt="Voice Assistant Project">
+                        <div class="project-tags">
+                            <span class="project-tag">TTS</span>
+                            <span class="project-tag">PyTorch</span>
+                            <span class="project-tag">Audio Processing</span>
+                            <span class="project-tag">AISpeech</span>
+                            <span class="project-tag">Whisper API</span>
+                            <span class="project-tag">Langchain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card">
+                    <h2>Facial Color Detection System</h2>
+                    <div class="category">Computer Vision | Fashion Tech</div>
+                    <p class="description">
+                        Uses OpenCV and MTCNN for color detection & facial analysis:<br>
+                        • 90% accuracy on hair, skin, eye color<br>
+                        • Classifies seasonal color palettes<br>
+                        • ML recommendations for outfits & makeup<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_detection.png" alt="Color Detection Project">
+                        <div class="project-tags">
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">MTCNN</span>
+                            <span class="project-tag">Mediapipe</span>
+                            <span class="project-tag">OpenAI</span>
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Webcam_Ready</span>
+                            <span class="project-tag">TensorFlow_Lite</span>
+                            <span class="project-tag">KMeans_Clustering</span>
+                            <span class="project-tag">Color Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card">
+                    <h2>Advanced AI Writing Assistant</h2>
+                    <div class="category">Writing Tools | Language AI</div>
+                    <p class="description">
+                        Real-time AI tool offering:<br>
+                        • Grammar & spelling correction<br>
+                        • Tone/style adjustment (professional, casual, formal)<br>
+                        • Multi-language support<br>
+                        • Word count & writing quality score<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_spell_checker.png" alt="Writing Assistant Project">
+                        <div class="project-tags">
+                            <span class="project-tag">AIWritingAssistant</span>
+                            <span class="project-tag">OpenAI</span>
+                            <span class="project-tag">SpellingCorrection</span>
+                            <span class="project-tag">GrammarCorrection</span>
+                            <span class="project-tag">MultiLanguage</span>
+                            <span class="project-tag">ToneAdjustment</span>
+                            <span class="project-tag">LanguageDetection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card">
+                    <h2>AI-Powered Course Creator</h2>
+                    <div class="category">AI Course Creator | Templates</div>
+                    <p class="description">
+                        Automatically generates structured courses from text/PDF inputs with:<br>
+                        • Smart Summarization - Condenses source material<br>
+                        • AI Editing - Improves clarity & flow<br>
+                        • Modular Design - Breaks into chapters/points (customizable count)<br>
+                        • Multi-Format Export - PDF/DOCX/TXT downloads<br>
+                        • Metadata Control - Sets course name, modules, pages per topic<br>
+                        <a href="#">Read more</a>
+                    </p>
+                    <div class="info-section">
+                        <img src="assets/portfolio_cource.png" alt="Course Creator Project">
+                        <div class="project-tags">
+                            <span class="project-tag">OpenAI</span>
+                            <span class="project-tag">TextToCourse</span>
+                            <span class="project-tag">PDFToCourse</span>
+                            <span class="project-tag">MultiFormatExport</span>
+                            <span class="project-tag">Structured Content</span>
+                            <span class="project-tag">Education Tech</span>
+                            <span class="project-tag">ModularDesign</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Model Inventory -->
+    <section id="model-inventory">
+        <div class="container">
+            <h2>AI Model Inventory</h2>
+
+            <!-- Google Gemini Models -->
+            <div class="scroll" style="--time:20s">
+                <div>
+                    <span>Gemini 1.5 Flash</span>
+                    <span>Gemini 1.5 Pro</span>
+                    <span>Gemini 2 Pro</span>
+                    <span>Gemini Nano</span>
+                    <span>Gemini Ultra</span>
+                    <span>Gecko (Embedding)</span>
+                    <span>Otter (Embedding)</span>
+                    <span>Bison (Embedding)</span>
+                    <span>Unicorn (Multimodal)</span>
+                </div>
+                <div>
+                    <span>Gemini 1.5 Flash</span>
+                    <span>Gemini 1.5 Pro</span>
+                    <span>Gemini 2 Pro</span>
+                    <span>Gemini Nano</span>
+                    <span>Gemini Ultra</span>
+                    <span>Gecko (Embedding)</span>
+                    <span>Otter (Embedding)</span>
+                    <span>Bison (Embedding)</span>
+                    <span>Unicorn (Multimodal)</span>
+                </div>
+            </div>
+
+            <!-- OpenAI Models -->
+            <div class="scroll" style="--time:25s">
+                <div>
+                    <span>GPT-3.5 Turbo</span>
+                    <span>GPT-4</span>
+                    <span>GPT-4 Turbo</span>
+                    <span>GPT-4 Omni</span>
+                    <span>GPT-4o</span>
+                    <span>Whisper-v3</span>
+                    <span>DALL-E 3</span>
+                    <span>CLIP (Embedding)</span>
+                    <span>text-embedding-3</span>
+                </div>
+                <div>
+                    <span>GPT-3.5 Turbo</span>
+                    <span>GPT-4</span>
+                    <span>GPT-4 Turbo</span>
+                    <span>GPT-4 Omni</span>
+                    <span>GPT-4o</span>
+                    <span>Whisper-v3</span>
+                    <span>DALL-E 3</span>
+                    <span>CLIP (Embedding)</span>
+                    <span>text-embedding-3</span>
+                </div>
+            </div>
+
+            <!-- Ollama Local Models -->
+            <div class="scroll" style="--time:30s">
+                <div>
+                    <span>Llama3 8B</span>
+                    <span>Llama3 70B</span>
+                    <span>Mistral 7B</span>
+                    <span>Mixtral 8x7B</span>
+                    <span>Neural Chat</span>
+                    <span>CodeLlama 34B</span>
+                    <span>Phi-3</span>
+                    <span>Gemma 2B</span>
+                    <span>Gemma 7B</span>
+                </div>
+                <div>
+                    <span>Llama3 8B</span>
+                    <span>Llama3 70B</span>
+                    <span>Mistral 7B</span>
+                    <span>Mixtral 8x7B</span>
+                    <span>Neural Chat</span>
+                    <span>CodeLlama 34B</span>
+                    <span>Phi-3</span>
+                    <span>Gemma 2B</span>
+                    <span>Gemma 7B</span>
+                </div>
+            </div>
+
+            <!-- AWS/HuggingFace/Meta -->
+            <div class="scroll" style="--time:35s">
+                <div>
+                    <span>Claude 3 Haiku</span>
+                    <span>Claude 3 Sonnet</span>
+                    <span>Claude 3 Opus</span>
+                    <span>Llama2 13B</span>
+                    <span>Llama2 70B</span>
+                    <span>Titan Text</span>
+                    <span>Jurassic-2 Ultra</span>
+                    <span>Bloom 176B</span>
+                    <span>Stable Diffusion XL</span>
+                </div>
+                <div>
+                    <span>Claude 3 Haiku</span>
+                    <span>Claude 3 Sonnet</span>
+                    <span>Claude 3 Opus</span>
+                    <span>Llama2 13B</span>
+                    <span>Llama2 70B</span>
+                    <span>Titan Text</span>
+                    <span>Jurassic-2 Ultra</span>
+                    <span>Bloom 176B</span>
+                    <span>Stable Diffusion XL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github">
+        <div class="container">
+            <h2>GitHub Contributions</h2>
+            <h3 style="margin-bottom: 2rem;">Top Repositories</h3>
+            <div class="github-repos">
+                <div class="repo-card">
+                    <h3>AICourseGen </h3>
+                    <p>AI-powered application designed to assist content creators, and educators in automating the
+                        generation of comprehensive course content.</p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 271</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3>ChatAssist</h3>
+                    <p>This repository contains a Flask-based web application that serves as a customer support chatbot.
+                    </p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 556</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3>ResumeGPT</h3>
+                    <p>This project provides a job matching solution using the Google Gemini API.</p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 42</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3>Spell-Checker</h3>
+                    <p>This tool helps users improve their writing by checking spelling according to selected English
+                        variants, analyzing grammar, and providing actionable writing suggestions.</p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 92</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3>Color-Detection</h3>
+                    <p>Advanced API for detecting face features, colors, accessories, and age/gender from images using
+                        MTCNN, OpenCV, and AI.</p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 78</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+                <div class="repo-card">
+                    <h3>Gemini-RAG-Engine</h3>
+                    <p>Gemini-RAG-Engine Assistant is an intelligent document QA system that combines Google's Gemini
+                        API with the Hypothetical Document Embedding (HyDE) technique for enhanced context-aware
+                        retrieval. </p>
+                    <div class="repo-stats">
+                        <span class="repo-stat">⭐ 108</span>
+                        <span class="repo-stat">📝 Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">1</div>
+                        <span>Custom AI Model Development</span>
+                        <p class="service-subtitle">Tailored AI solutions for your specific domain</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><strong>Fine-Tuned LLMs:</strong></li>
+                            <span class="service_points">Custom ChatGPT-like assistants, domain-specific models</span>
+                            <li><strong>Diffusion Models:</strong></li>
+                            <span class="service_points">Stable Diffusion/LoRA adapters for design</span>
+                            <li><strong>Voice/Image AI:</strong></li>
+                            <span class="service_points">Text-to-speech, voice cloning, AI animations</span>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">2</div>
+                        <span>AI-Powered Automation</span>
+                        <p class="service-subtitle">Streamline your workflows with intelligent automation</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><strong>Agent Workflows:</strong></li>
+                            <span class="service_points">AutoGPT-style research assistants</span>
+                            <li><strong>Content Pipelines:</strong></li>
+                            <span class="service_points">Blog/article generation systems</span>
+                            <li><strong>Multimodal AI:</strong></li>
+                            <span class="service_points">Combine text, image, and audio processing</span>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">3</div>
+                        <span>AI Integration & Deployment</span>
+                        <p class="service-subtitle">Seamlessly integrate AI into your existing systems</p>
+                    </div>
+                    <div class="service-body">
+                        <ul class="service-features">
+                            <li><strong>Chatbots & APIs:</strong></li>
+                            <span class="service_points">Deploy LLMs on your platforms</span>
+                            <li><strong>Vector Search:</strong></li>
+                            <span class="service_points">RAG systems for knowledge bases</span>
+                            <li><strong>Cloud AI:</strong></li>
+                            <span class="service_points">Scalable model hosting solutions</span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Latest Articles</h2>
+            <div class="blog-posts">
+                <!-- Article 1 -->
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="assets/portfolio_domain_2.png" class="blog-img" alt="Fine-tuning LLMs Article">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>May 15, 2023</span>
+                            <span>10 min read</span>
+                        </div>
+                        <h3>Fine-tuning LLMs for Domain-Specific Tasks</h3>
+                        <p>
+                            Exploring techniques to adapt large language models for specialized use cases with limited
+                            data.
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="assets/portfolio_domain_3.png" class="blog-img" alt="Ethical AI Article">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>March 28, 2023</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3>Ethical Considerations in Generative AI</h3>
+                        <p>
+                            Addressing bias, copyright, and misuse potential in modern generative models.
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="assets/portfolio_domain_4.png" class="blog-img" alt="Diffusion Models Article">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>February 10, 2023</span>
+                            <span>12 min read</span>
+                        </div>
+                        <h3>Optimizing Diffusion Models for Production</h3>
+                        <p>
+                            Practical techniques to reduce inference time and resource requirements.
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's collaborate on your next AI project</h3>
+                    <p>
+                        I'm currently available for freelance work or full-time positions. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <span>makwanasanjaylm@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <span>+91 6351336586</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <span>Ahmedabad, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo" style="font-size: 1.5rem;">Generative AI Portfolio</a>
+                <div class="footer-links">
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#github">GitHub</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">
+                    © 2025 Generative AI Engineer Portfolio. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
