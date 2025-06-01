@@ -14,28 +14,28 @@ window.addEventListener('scroll', function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const serviceCards = document.querySelectorAll('.service-card');
-    
+
     serviceCards.forEach(card => {
         const learnMoreBtn = card.querySelector('.learn-more');
         const closeBtn = card.querySelector('.close-details');
         const details = card.querySelector('.service-details');
-        
+
         learnMoreBtn.addEventListener('click', () => {
             details.classList.add('active');
         });
-        
+
         closeBtn.addEventListener('click', () => {
             details.classList.remove('active');
         });
     });
-    
+
     // Animation on scroll
     const observerOptions = {
         threshold: 0.1
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, observerOptions);
-    
+
     const animatedElements = document.querySelectorAll('.service-card, .section-header');
     animatedElements.forEach(el => {
         el.style.opacity = 0;
@@ -53,7 +53,25 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+    // Toggle menu when button is clicked
+    mobileMenuBtn.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close menu when any mobile nav link is clicked
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+        });
+    });
+});
 
 function openSecondPage() {
     window.location.href = "Resume/resume.html";
-  }
+}
+

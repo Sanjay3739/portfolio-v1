@@ -189,13 +189,14 @@ nav {
 
 /* === Hero Section === */
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 80px;
+    /* Add space for fixed header */
 }
-
 
 .main_section {
     display: flex;
@@ -203,14 +204,16 @@ nav {
     justify-content: space-between;
     gap: 50px;
     width: 100%;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
 }
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    min-width: 300px;
+    /* Prevent content from becoming too narrow */
     position: relative;
     z-index: 3;
-    /* Higher than hero-bg */
 }
 
 .hero-content p {
@@ -246,12 +249,26 @@ nav {
     position: relative;
     width: 350px;
     height: 450px;
-    overflow: hidden;
+    flex-shrink: 0;
+    /* Prevent image from shrinking too much */
+    margin: 40px auto 0;
+    /* Add margin on top and center */
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
     z-index: 3;
 }
+
+/* #portfolio-card {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    z-index: 3;
+} */
 
 .portfolio-card:hover {
     transform: scale(1.03);
@@ -291,9 +308,11 @@ nav {
     color: #ccc;
     margin-bottom: 15px;
 }
-.resume_btn{
+
+.resume_btn {
     margin-top: 20px;
 }
+
 /* === Skills Section === */
 #skills {
     background-color: var(--darker);
@@ -833,11 +852,11 @@ footer {
 /* === Responsive Styles === */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .nav-links {
@@ -857,18 +876,23 @@ footer {
     }
 
     #portfolio-card {
-        width: 100%;
-        max-width: 350px;
-        margin-top: 40px;
+        width: 250px;
+        height: 350px;
     }
 
     .project-links {
         flex-direction: column;
     }
 
+    #hero {
+        padding-top: 70px;
+    }
+
     .btn {
         width: 100%;
         text-align: center;
+        padding: 10px 20px;
+        font-size: 0.8rem;
     }
 
     .section-header .title {
@@ -885,6 +909,10 @@ footer {
 
     .skills-header h1 {
         font-size: 2rem;
+    }
+
+    header.scrolled {
+        padding: 10px 0 !important;
     }
 }
 
@@ -920,5 +948,129 @@ footer {
     #portfolio-card {
         width: 300px;
         height: 400px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    /* Tablet styles */
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main_section {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    #portfolio-card {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Small mobile devices */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    #portfolio-card {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--darker);
+    padding: 20px;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+}
+
+.mobile-nav-links {
+    list-style: none;
+}
+
+.mobile-nav-links li {
+    margin-bottom: 15px;
+}
+
+.mobile-nav-links a {
+    color: var(--light);
+    font-size: 1.1rem;
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1070px) {
+    .main_section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #portfolio-card {
+        margin-top: 50px;
     }
 }
